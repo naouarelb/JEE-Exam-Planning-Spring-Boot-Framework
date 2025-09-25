@@ -30,7 +30,7 @@ Before getting started, make sure you have:
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/naouarelb/JEE_exams_planning_with_spring_boot.git
+git clone https://github.com/naouarelb/JEE_exams_planning_using_spring_boot.git
 ```
 
 ### 2️⃣ Configure the database
