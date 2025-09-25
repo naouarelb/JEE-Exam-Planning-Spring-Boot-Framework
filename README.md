@@ -1,60 +1,77 @@
-# Planification-des-examens-avec-Spring-Boot-Framework
-Conception et Developpement d'un application des gestion des examens avec Spring boot Framework
+# 📚 Exam Scheduling with Spring Boot
 
-## Introduction
-Cette application permet de planifier et gérer les examens en utilisant le framework Spring Boot. Elle offre des fonctionnalités pour ajouter, modifier, supprimer et afficher les examens, ainsi que pour gérer les salles et les surveillants.
+An application for **exam management and scheduling** built with the **Spring Boot** framework.  
+It allows efficient organization of exams, rooms, invigilators, and related logistics.
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
+---
 
-- Java JDK 11 ou supérieur
-- Maven
-- IDE (IntelliJ IDEA, Eclipse, etc.)
-- PostgreSQL (ou tout autre SGBD supporté par Spring Data JPA, A condition de changer les propretes de chaque SGBD dans le fichier application.properties)
+## 🚀 Introduction
+This application provides complete exam management with features such as:  
+- Creating, updating, and deleting exams  
+- Managing rooms, invigilators, and absence controllers  
+- Viewing exam details and generating official documents (reports, transcripts, attendance sheets)  
+
+---
+
+## 🛠️ Prerequisites
+Before getting started, make sure you have:  
+- **Java JDK** 11 or higher  
+- **Maven**  
+- **IDE** (IntelliJ IDEA, Eclipse, etc.)  
+- **PostgreSQL** (or any other DB supported by Spring Data JPA — update `application.properties` accordingly)  
+
+---
 
 ## Architecture
 ![Architecture](images/Architecture.drawio.png)
 
 
-## Installation
+## ⚡ Installation
 
-### 1. Cloner le dépôt :
-git clone https://github.com/Ghost1762/Planification-des-examens-avec-Spring-Boot-Framework.git
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/naouarelb/JEE_exams_planning_with_spring_boot.git
+```
 
-### 2. Configurer la base de données :
+### 2️⃣ Configure the database
+```bash
 spring.datasource.url=jdbc:votreSGBD://host:port/NomDB
 spring.datasource.username=yourUsername
 spring.datasource.password=yourPassword
 spring.jpa.hibernate.ddl-auto=update
+```
 
-### 3. Construire l'application :
+### 3️⃣ Build the application
+```bash
 mvn clean install
-
-### 4. Lancer l'application :
+```
+### 4️⃣ Run the application
+```bash
 mvn spring-boot:run
-
-### 5. Les fonctionnalités :
-- L'ajout d'un examen.
+```
+## ✨ Features
+### ➕ Add an exam
 ![Ajout d'un examen](images/formulaire_Creation_Examen.png)
 
-- La suppression d'un examen.
+### ❌ Delete an exam
 
-- La modification.
+### ✏️ Update exam details
 ![Modification d'un examen](images/formulaire_Modification_Examen.png)
 
-- L'affectation des salles.
-- L'affectation des surveillants et des controlleurs d'absence.
+### 🏫 Assign rooms
+👨‍🏫 Assign invigilators and absence controllers
 ![Affectation des salles](images/Affectation_Salles.png)
 
-- Consiltation des information d'un examen.
+### 📄 View exam information
 ![Consultation](images/infomation.png)
 
-- L'inclusion le procès-verbal, le rapport et le relevé d'examen.
+### 📝 Generate official documents: reports, transcripts, and attendance sheets
 ![Papier](images/PV_Papport_enonce.png)
 
 
-### 6. Contribuer :
-Les contributions sont les bienvenues !
+## 🤝 Contribution
+Contributions are welcome!
+Feel free to open an issue or submit a pull request.
 
-### 7. Auteurs :
-EL BOUMASHOULI Naouar - Pour n'importe quelle question ou remarque, veuillez me contacter sur https://www.linkedin.com/in/n-boumashouli/
+### 👤 Author
+Naouar EL BOUMASHOULI
